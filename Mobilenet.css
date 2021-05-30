@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url("/Resources/GarbageBackground.png");
+    background-size: cover;
+    height: 95vh;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    opacity: 0;
+}
+
+video {
+    width: auto;
+    height: 80vh;
+    margin-top: 12vh;
+    box-shadow: 0 0 50px 0 green;
+    padding: 0;
+}
+
+#liveView {
+    text-align: center;
+}
+
+.detailImage {
+    position: absolute;
+    left: 20vw;
+    top: -13.9vh;
+    width: 25vw;
+    height: 51.6vh;
+}
+
+button {
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: green;
+    border: solid 1px green;
+    color: #FFF;
+    pointer-events: all;
+    transition: .2s ease;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    position: fixed;
+    margin-left: 43vw;
+}
+
+button:hover {
+    background-color: greenyellow;
+    border: solid 1px greenyellow;
+    color: black;
+}
+
+.removed {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.VideoBackground {
+    background: white;
+    width: 1000px;
+    margin-top: 12vh;
+}
+
+.invisible {
+    border: 1px solid #B1B1B3;
+    background: white;
+    color: #000;
+    cursor: default;
+    pointer-events: none;
+}
+
+.camView {
+    cursor: pointer;
+}
+
+.highlighter p {
+    margin-top: 0;
+    left: -195px;
+    top: -2px;
+    padding: 5px;
+    z-index: 2;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    background-color: green;
+    box-shadow: 0 0 50px 0 green;
+}
+
+.highlighter {
+    border: 2px solid green;
+    box-shadow: 0 0 50px 0 green;
+    z-index: 1;
+    position: fixed;
+    display: grid;
+    place-content: center;
+}
